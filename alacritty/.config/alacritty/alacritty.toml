@@ -1,0 +1,8 @@
+[env]
+editor = "nvim"
+
+[font]
+size = 12
+
+[font.normal]
+family = "Fira Code"
