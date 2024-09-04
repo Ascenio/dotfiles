@@ -10,4 +10,5 @@ xsetroot -cursor_name left_ptr
 picom --config /dev/null --backend glx --vsync -b
 xinput set-prop "Logitech G403 HERO Gaming Mouse" "libinput Accel Profile Enabled" 0 1 &
 (sleep 1; volumeicon) &
+blueman-applet &
 exec i3
