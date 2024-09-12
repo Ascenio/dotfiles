@@ -18,14 +18,18 @@ if status is-interactive
     export CHROME_EXECUTABLE=$(which chromium)
 end
 
-function dartscaffold 
+function tmp
 	cd (mktemp -d)
+end
+
+function dartscaffold 
+	tmp
 	dart create hello
 	code hello
 end
 
 function scaffold 
-	cd (mktemp -d)
+	tmp
 	flutter create hello
 	code hello
 end
