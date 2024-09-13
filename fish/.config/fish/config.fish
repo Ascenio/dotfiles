@@ -7,8 +7,7 @@ if status is-login
 end
 
 if status is-interactive
-    eval $(ssh-agent -c) >/dev/null
-    ssh-add ~/.ssh/github &>/dev/null
+    keychain --eval --quiet -Q -c ~/.ssh/config | source
     fish_add_path $HOME/.platformio/penv/bin
     fish_add_path $HOME/.local/bin
     fish_add_path $HOME/dev/Android/platform-tools
