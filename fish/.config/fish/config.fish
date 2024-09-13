@@ -8,10 +8,10 @@ end
 
 if status is-interactive
     keychain --eval --quiet -Q -c ~/.ssh/config | source
-    fish_add_path $HOME/.platformio/penv/bin
-    fish_add_path $HOME/.local/bin
-    fish_add_path $HOME/dev/Android/platform-tools
-    fish_add_path $HOME/dev/flutter/bin/
+    fish_add_path ~/.platformio/penv/bin
+    fish_add_path ~/.local/bin
+    fish_add_path ~/dev/Android/platform-tools
+    fish_add_path ~/dev/flutter/bin/
     export MANPAGER='nvim +Man!'
     export EDITOR='nvim'
     export CHROME_EXECUTABLE=$(which chromium)
