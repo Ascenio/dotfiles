@@ -90,6 +90,6 @@ require("lazy").setup({
 			end,
 		}
 	},
-	checker = { enabled = true },
+	checker = { enabled = true, notify = false },
 })
 
