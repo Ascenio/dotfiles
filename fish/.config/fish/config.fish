@@ -7,7 +7,7 @@ if status is-login
 end
 
 if status is-interactive
-    keychain --eval --quiet -Q -c ~/.ssh/config | source
+    keychain --eval --quiet -Q | source
     fish_add_path ~/.platformio/penv/bin
     fish_add_path ~/.local/bin
     fish_add_path ~/dev/Android/platform-tools
