@@ -17,7 +17,7 @@ if status is-interactive
     fish_add_path ~/dev/flutter/bin/
     export MANPAGER='nvim +Man!'
     export EDITOR='nvim'
-    export CHROME_EXECUTABLE=$(which chromium)
+    export CHROME_EXECUTABLE=$(which google-chrome-stable)
 end
 
 function tmp
