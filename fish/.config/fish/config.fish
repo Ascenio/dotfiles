@@ -27,11 +27,11 @@ end
 function dartscaffold 
 	tmp
 	dart create hello
-	$EDITOR hello
+	cd hello
 end
 
 function scaffold 
 	tmp
 	flutter create hello
-	$EDITOR hello
+	cd hello
 end
