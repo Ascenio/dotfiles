@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+base_path=~/.local/bin/ 
+script=$(find $base_path '(' -type f -o -type l ')' -executable '!' -name $(basename "$0") -exec basename {} ';' | rofi -dmenu -i -p script)
+if [[ -n "$script" ]]; then
+	"$base_path/$script"
+fi
