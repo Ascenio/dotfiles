@@ -23,12 +23,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references, opts)
 		vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename, opts)
 		vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
-
-		vim.api.nvim_create_autocmd('BufWritePre', {
-			buffer = opts.buf,
-			group = vim.api.nvim_create_augroup('formatter', { clear = true }),
-			callback = function() vim.lsp.buf.format() end,
-		})
+		vim.keymap.set("n", "<leader>bf", vim.lsp.buf.format, opts)
 	end,
 })
 
