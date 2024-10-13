@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+maim | magick - -blur 0x8 RGB:- | i3lock -i /dev/stdin --raw=1920x1080:rgb
