@@ -1,6 +1,9 @@
 return {
 	'ellisonleao/gruvbox.nvim',
-	config = function()
-		vim.cmd('colorscheme gruvbox')
-	end,
+	config = true,
+	opts = {
+		overrides = {
+			SignColumn = {bg = "none"}
+		},
+	}
 }
