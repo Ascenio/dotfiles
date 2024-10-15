@@ -150,6 +150,7 @@ bindsym Print exec --no-startup-id maim -s | xclip -t image/png -selection clipb
 
 bindsym $mod+b exec --no-startup-id boomer
 bindsym $mod+shift+s exec --no-startup-id ~/.local/bin/script-menu
+bindsym $mod+x exec --no-startup-id rofimoji --skin-tone neutral
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #ffffff #285577 #ffffff #2e9ef4   #d79921
