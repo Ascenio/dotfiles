@@ -12,4 +12,5 @@ xinput set-prop "Logitech G403 HERO Gaming Mouse" "libinput Accel Profile Enable
 (sleep 1; volumeicon) &
 blueman-applet &
 setxkbmap -option caps:escape
+xss-lock --transfer-sleep-lock -- ~/.local/bin/lock &
 exec i3
