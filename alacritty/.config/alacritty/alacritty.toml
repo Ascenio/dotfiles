@@ -6,3 +6,13 @@ size = 12
 
 [font.normal]
 family = "Fira Code"
+
+[keyboard]
+bindings = [
+	{ key = "Space", mods = "Control", mode = "~Alt", action = "ToggleViMode" },
+	{ key = "Escape", mode = "Vi", action = "ToggleViMode" },
+	{ key = "Y", mode = "Vi|~Search", action = "Copy" },
+	{ key = "Y", mode = "Vi|~Search", action = "ClearSelection" },
+	{ key = "Y", mode = "Vi", action = "ToggleViMode" },
+]
+
