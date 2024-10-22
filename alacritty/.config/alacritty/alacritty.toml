@@ -11,8 +11,8 @@ family = "Fira Code"
 bindings = [
 	{ key = "Space", mods = "Control", mode = "~Alt", action = "ToggleViMode" },
 	{ key = "Escape", mode = "Vi", action = "ToggleViMode" },
-	{ key = "Y", mode = "Vi|~Search", action = "Copy" },
-	{ key = "Y", mode = "Vi|~Search", action = "ClearSelection" },
+	{ key = "Y", mode = "Vi", action = "Copy" },
+	{ key = "Y", mode = "Vi", action = "ClearSelection" },
 	{ key = "Y", mode = "Vi", action = "ToggleViMode" },
 ]
 
