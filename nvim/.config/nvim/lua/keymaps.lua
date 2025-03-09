@@ -6,3 +6,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setqflist, { desc = 'Open diagno
 vim.keymap.set('n', ']q', ':cnext<CR>')
 vim.keymap.set('n', '[q', ':cprevious<CR>')
 
+vim.keymap.set({'n', 'v'}, '<leader>y', '"+y')
+vim.keymap.set({'n', 'v'}, '<leader>p', '"+p')
+vim.keymap.set({'n', 'v'}, '<leader>P', '"+P')
+vim.keymap.set('n', '<leader>ys', ':let @+=@"<CR>')
